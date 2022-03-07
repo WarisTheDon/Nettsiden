@@ -1,0 +1,403 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+
+}
+
+body{
+
+font-family: montserrat;
+background-color: #ffffff;
+
+}
+
+nav{
+
+    background: #f0f0f0;
+    height:80px;
+    width:100%; 
+
+
+
+}
+
+label.logo{
+
+    color: white;
+    font-size: 35px; 
+    line-height: 80px; 
+    padding: 0 100px; 
+    font-weight: bold; 
+    
+    
+    
+
+}
+
+nav ul{ 
+
+    float: right;
+    margin-right: 20px; 
+}
+nav ul li{ 
+
+    display:inline-block; 
+    line-height: 80px;
+    margin: 0 5px; 
+    padding: 7px 13px;
+    border-radius: 3px;
+
+}
+
+nav ul li a{
+
+    color: rgb(0, 0, 0);
+    font-size: 17px; 
+    text-transform: uppercase;
+    padding: 7px  13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+
+}
+
+a.active,a:hover{
+    color: #b22fda;
+    transition: .5s;
+
+}
+
+.checkbtn {
+
+    font-size: 30px;
+    color: white;
+    float: right; 
+    line-height: 80px;
+    margin-right:40px;
+    cursor: pointer;
+    display:none; 
+
+}
+#check{
+
+    display:none; 
+
+}
+@media (max-width: 952px){
+label.logo{
+    
+    font-size: 30px;
+    padding-left: 50px; 
+
+ }
+ 
+
+ nav ul li a{
+
+    font-size: 16px;
+ }
+
+}
+
+@media (max-width: 858px) {
+.checkbtn{
+
+    display:block;
+
+
+}
+
+ul{ 
+
+    position:fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px; 
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+
+}
+
+nav ul li{ 
+
+    display: block;
+    margin: 50px 0;
+    line-height: 30px ;
+
+
+}
+
+nav ul li a{
+
+    font-size: 20px;
+
+}
+a:hover,a.active{ 
+
+    background: none;
+    color: #952fc4; 
+
+}
+
+#check:checked ~ ul{
+
+
+left:0;
+
+}
+
+    
+}
+
+section{
+    background:url(bg1.jpg) no-repeat;
+    background-size:cover;
+    height: calc(100vh - 80px);
+
+}
+
+.purple{
+
+    position: relative;
+    top: -1095px;
+    width: 100%;
+    height: 400px;
+    
+
+}
+
+.wifi {
+
+    position: relative;
+    top: -1365px;
+    left: 910px;
+    width: 6.5cm;
+
+
+}
+
+.textbox1 {
+
+    position: relative;
+    top: -1595px ;
+    left: 100px ;
+    color: white;
+    font-size: 30px ;
+    line-height: 63px;
+    font-family: 'Fredoka One', cursive;
+
+
+}
+
+
+
+.textbox2 {
+
+position: relative;
+top: -1550px;
+left: 100px;
+color: rgb(255, 255, 255);
+font-size: 18px;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+
+.buttons {
+
+    display: flex;
+    width: 150px;
+    flex-direction: column;
+
+}
+
+
+.btn{
+
+    padding: 20px 50px  ; 
+    text-decoration: none;
+}
+
+
+
+
+.btn-1{
+    background: rgb(76, 11, 95);
+    color: white;
+    border-radius: 30px;
+    transition: transform 0.3 ease;
+
+}
+
+.container{
+
+    position: relative;
+    top: 330px;
+    top: -1500px;
+    left: 100px;
+
+}
+.btn-1::after, .btn-1::before {
+
+    content: "";
+    position: absolute;
+    opacity: 0.3;
+    background: black;
+    border-radius: inherit;
+    width: 150px;
+    height: 100%;
+    left: 0;
+    bottom: 0; 
+    z-index: -1;
+    transition: transform 0.3s ease; 
+
+
+}
+
+.btn-1:hover {
+
+    transform: translate(-12px, -12px);
+
+}
+
+.btn-1:hover::after{
+
+transform: translate(6px, 6px);
+
+
+}
+
+
+
+.btn-1:hover::before{
+
+transform: translate(12px, 12px);
+
+
+}
+
+//splitt 
+
+
+.box3
+{
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 300px;
+    width: 700px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgb(76, 9, 97);
+    border-radius: 4px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 5) ;
+    display: flex;
+    transition: .5s;
+ }  
+.box3:hover  
+{
+ box-shadow: 0 15px 30px rgba(0,0,0,.5) ;
+
+}
+.box3 .imgBx2
+{
+    width: 150px;
+    size: 300px;
+    flex: 0 0 150px;
+}
+
+.box3 .imgBx2 img 
+{
+    max-width: 100%;
+
+}
+
+.box3 .content
+{
+    padding-left: 20px ;
+
+}
+
+.box3 .content h2 
+{
+    position: relative;
+    margin: 0;
+    padding-left: 0;
+    color: rgb(0, 0, 0);
+    font-family: 'Fredoka One', cursive;
+    font-size: 20px;
+    font-weight:100;
+    left: 100px;
+}
+
+.box3 .content p 
+{
+    margin: 0;
+    padding: 10px 0 0;
+    text-align: justify;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px ;
+    font-weight: 100;
+    
+    
+
+}
+
+
+.buttons3 {
+    position: relative;
+    top: 50px;
+    display: flex;
+    width: 150px;
+    flex-direction: column;
+    width: 200px;
+
+}
+
+
+.btn{
+
+    padding: 20px 50px  ; 
+    text-decoration: none;
+}
+
+
+
+
+.btn-2{
+    background: rgb(150, 62, 177);
+    color: white;
+    border-radius: 30px;
+    transition: transform 0.3 ease;
+
+}
+
+.container3{
+
+    position: relative;
+    top: -580px;
+    left: 50px;
+
+}
+
+.btn-2:hover {
+    background-color: rgb(107, 15, 134);
+    animation-delay: 5s;
+
+}
+
+.BildeT 
+{
+    position: relative;
+    width: 500px;
+    top: -870px;
+    left: 800px;
+}
